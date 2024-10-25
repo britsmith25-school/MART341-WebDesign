@@ -1,0 +1,71 @@
+<!--Forms for Songs page-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Music for Moods</title>
+    <style>
+        body {background-color:honeydew}
+        h1 {color:darkblue}
+        blockquote {color: black}
+    </style>
+    <h1>What kind of music are we feeling like?</h1>
+    <br>
+    <blockquote>Where words fail, music speaks</blockquote>
+    <cite>Hans Christian Andersen</cite>
+</head>
+
+<body>
+    <img src = "FormSongsImage.jpg" alt = "Form for Songs" style = "width:100%">
+    <br>
+    <hr>
+    <h1>Different Music for Different Moods Form</h1>
+    <br>
+    <p>Below is a form that allows you to select a mood, a genre, and some example songs that you can chose from to help figure out which songs you prefer in your moods. This will help you find the perfect song for your current mood.</p>
+    <br>
+    <!--Inserting the form (hopefully looks okay) here-->
+    <form action="songs.php" method="post">
+        <label for="mood">Mood:</label>
+        <select id="mood" name="mood">
+            <option value="happy">Happy</option>
+            <option value="sad">Sad</option>
+            <option value="angry">Angry</option>
+            <option value="excited">Excited</option>
+            <option value="relaxed">Relaxed</option>
+            <option value="stressed">Stressed</option>
+            <option value="confused">Confused</option>
+            <option value="hopeful">Hopeful</option>
+        </select>
+        <br>
+        <label for="genre">Genre:</label>
+        <select id="genre" name="genre">
+            <option value="pop">Pop</option>
+            <option value="blues">Blues</option>
+            <option value="rock">Rock</option>
+            <option value="edm">EDM</option>
+            <option value="lo-fi">Lo-fi</option>
+            <option value="classical">Classical</option>
+            <option value="experimental">Experimental</option>
+            <option value="indie">Indie</option>
+        </select>
+        <br>
+        <label for="song">Song:</label>
+        <select id="song" name="song">
+            <option value="Espresso by Sabrina Carpenter">Song 1</option>
+            <option value="Married to the Blues by the Nortons">Song 2</option>
+            <option value="How You Remind Me by Nickleback">Song 3</option>
+            <option value="Black Space by the Anix">Song 4</option>
+            <option value="Calm River by Blue Fox">Song 5</option>
+            <option value="Symphony No. 9 by Ludwig van Beethoven">Song 6</option>
+            <option value="Lost in the World by Lucy Over Lancashire">Song 7</option>
+            <option value="The Night We Met by Lord Huron">Song 8</option>
+        </select>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    <!--Link back to index.html-->
+    <br>
+    <a href="index.html">Back to Home</a>
+    <!--Link to moods.html-->
+    <br>
+    <a href="moods.html">Moods Table</a>
+</body>
