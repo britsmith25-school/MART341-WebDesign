@@ -1,0 +1,156 @@
+<head>
+    <!--Meta and basic styling setup, trying out some new stuff to for the ease for user-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Make Some Bangin' Cheesecake</title>
+    <style>
+        
+        body {
+            background-color: #C9C1C1;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #151B54;
+        }
+        h3 {
+            color: #15317E;
+        }
+        strong {
+            color: #1589FF;
+        }
+        .ingredient-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        .ingredient-item input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .instruction-step {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!--Making a Navigation Bar to the Ingredients (in-site), the Instructions (in-site), the Gallery (gallery.html), and the About Page (about.html)-->
+    <!--Navigation Bar Across the Top of the Page-->
+    <nav class="navbar">
+        <a href="#ingredients">Ingredients</a>
+        <a href="#instructions">Instructions</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+    </nav>
+     <!--Main Content-->  
+    <h1>How to Make Some Bangin' Cheesecake</h1>
+    <hr>
+    <img src="Resized_BlackberryCheesecake.jpg" alt="Blackberry Cheesecake" style="width: 100%; max-width: 600px;">
+    <br>
+    <h3 id="ingredients">Ingredients</h3>
+    <p><strong>For the Crust</strong></p>
+  <ul class="ingredient-list">
+    <li class="ingredient-item">
+      <input type="checkbox" id="crust-1">
+      <label for="crust-1">2 cups graham cracker crumbs</label>
+    </li>
+    <li class="ingredient-item">
+      <input type="checkbox" id="crust-2">
+      <label for="crust-2">1/4 cup granulated sugar</label>
+    </li>
+    <li class="ingredient-item">
+      <input type="checkbox" id="crust-3">
+      <label for="crust-3">6 tablespoons unsalted butter, melted</label>
+    </li>
+  </ul>
+
+  <p><strong>For the Filling</strong></p>
+  <ul class="ingredient-list">
+    <li class="ingredient-item">
+      <input type="checkbox" id="filling-1">
+      <label for="filling-1">4 (8-ounce) packages cream cheese, room temperature</label>
+    </li>
+    <li class="ingredient-item">
+      <input type="checkbox" id="filling-2">
+      <label for="filling-2">1 1/3 cup granulated sugar</label>
+    </li>
+    <li class="ingredient-item">
+      <input type="checkbox" id="filling-3">
+      <label for="filling-3">1 tablespoon vanilla extract</label>
+    </li>
+    <li class="ingredient-item">
+      <input type="checkbox" id="filling-4">
+      <label for="filling-4">4 large eggs, lightly beaten</label>
+    </li>
+    <li class="ingredient-item">
+      <input type="checkbox" id="filling-5">
+      <label for="filling-5">1 cup sour cream, room temperature</label>
+    </li>
+    <li class="ingredient-item">
+      <input type="checkbox" id="filling-6">
+      <label for="filling-6">1/4 teaspoon salt</label>
+    </li>
+  </ul>
+
+  <p><strong>For the Sauce</strong></p>
+  <ul class="ingredient-list">
+    <li class="ingredient-item">
+      <input type="checkbox" id="sauce-1">
+      <label for="sauce-1">16 ounces of your favorite berry, diced</label>
+    </li>
+    <li class="ingredient-item">
+      <input type="checkbox" id="sauce-2">
+      <label for="sauce-2">2 tablespoons cornstarch</label>
+    </li>
+    <li class="ingredient-item">
+      <input type="checkbox" id="sauce-3">
+      <label for="sauce-3">1 cup granulated sugar</label>
+    </li>
+    <li class="ingredient-item">
+      <input type="checkbox" id="sauce-4">
+      <label for="sauce-4">2 teaspoons vanilla extract</label>
+    </li>
+    <li class="ingredient-item">
+      <input type="checkbox" id="sauce-5">
+      <label for="sauce-5">1/8 teaspoon salt</label>
+    </li>
+    <li class="ingredient-item">
+      <input type="checkbox" id="sauce-6">
+      <label for="sauce-6">2 cups of your favorite berry, finely chopped</label>
+    </li>
+  </ul>
+
+    <h3 id="instructions">Instructions</h3>
+    <h3>Instructions:</h3>
+    <p><strong>The Making of the Crust!</strong></p>
+    <ol>
+        <li><span class="instruction-step">Move the oven rack to the lower third position and heat the oven to 350 degrees. Wrap the outer bottom of a 9-inch springform pan tightly with aluminum.</span></li>
+        <li><span class="instruction-step">Combine the graham cracker crumbs, sugar, and melted butter. Press the crumb mixture into the bottom and about 2 inches up the sides of the pan. Bake for 10 minutes while you make the filling.</span></li>
+    </ol>
+
+    <p><strong>The Making of the Filling!</strong></p>
+    <ol>
+        <li><span class="instruction-step">Reduce the oven to 300 degrees.</span></li>
+        <li><span class="instruction-step">In a large mixing bowl, beat the cream cheese with an electric mixer until smooth and creamy.</span></li>
+        <li><span class="instruction-step">Add the sugar and the sour cream, beat until well combined. Add the vanilla and salt, beat on low speed until smooth.</span></li>
+        <li><span class="instruction-step">Using a silicone spatula, gently stir in the eggs just until combined. Pour the batter over the prepared crust.</span></li>
+        <li><span class="instruction-step">Fill a roasting pan with a few inches of boiling water and place the cheesecake in the center.</span></li>
+        <li><span class="instruction-step">Bake for 1 hour, OR, until the edges are set and the center is slightly joggly. Turn the oven off, leaving the cheesecake in the water bath in the oven for another hour.</span></li>
+        <li><span class="instruction-step">Remove the cheesecake from the water bath and place it on a wire rack. Run a small knife around the outer edge of the cheesecake to loosen it from the pan (if you used the springform pan) and leave it to cool at room temperature for about 1.5 hours. Cover and refrigerate for at least 4 hours overnight.</span></li>
+    </ol>
+
+    <p><strong>The Making of the Sauce!</strong></p>
+    <ol>
+        <li><span class="instruction-step">Add the diced favorite berries and cornstarch to the bowl of a food processor and process until smooth. Transfer to a medium saucepan and add the sugar.</span></li>
+        <li><span class="instruction-step">Cook over medium heat, stirring constantly until thickened, around 15 minutes.</span></li>
+        <li><span class="instruction-step">Remove from heat and stir in the vanilla, salt, and chopped favorite berries. Set aside to cool for about 40 minutes, stirring occasionally.</span></li>
+        <li><span class="instruction-step">Spread over the cheesecake when you are ready to serve!</span></li>
+    </ol>
+    <hr>
+    <h3>Additional Tips:</h3>
+    <ul>
+        <li>To enhance the sauce a little bit, add the juice from half a lemon. Really makes the berries pop, and, helps keep the color!</li>
+        <li>If you feel that your sauce has a bit too many seeds, feel free to strain it after it has cooked on the stove, it'll make it easier to do so.</li>
+        <li>On the filling, you can also use some of your sauce to add some pretty swirls in it.</li>
+    </ul>
+    <hr>
+</body>
