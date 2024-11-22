@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tool Selection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Tool Selection for Your Workspace</h1>
+    </header>
+
+    <main>
+        <section class="tools-container">
+            <h2>Select Tools for Your Workspace</h2>
+            <div class="tool-dropdown">
+                <label for="tools">Choose a tool:</label>
+                <select id="tools" name="tools">
+                    <option value="hammer">Hammer</option>
+                    <option value="drill">Drill</option>
+                    <option value="screwdriver">Screwdriver</option>
+                    <option value="pliers">Pliers</option>
+                    <option value="wrench">Wrench</option>
+                </select>
+            </div>
+
+            <!-- Tool description -->
+            <div class="tool-description" id="tool-description">
+                <p>Select a tool to see its description.</p>
+            </div>
+
+            <!-- Tool image -->
+            <div class="tool-image">
+                <img id="tool-image" src="" alt="Tool image" style="display:none;">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tool Selection. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const toolsSelect = document.getElementById("tools");
+        const description = document.getElementById("tool-description");
+        const toolImage = document.getElementById("tool-image");
+
+        toolsSelect.addEventListener("change", function() {
+            const selectedTool = toolsSelect.value;
+            let toolInfo = "";
+            let toolImagePath = "";
+
+            switch (selectedTool) {
+                case "hammer":
+                    toolInfo = "A hammer is used to drive nails into wood or other materials.";
+                    toolImagePath = "images/hammer.jpg"; // Image path for hammer
+                    break;
+                case "drill":
+                    toolInfo = "A drill is used to make round holes or drive fasteners.";
+                    toolImagePath = "images/drill.jpg"; // Image path for drill
+                    break;
+                case "screwdriver":
+                    toolInfo = "A screwdriver is used to turn screws for fastening purposes.";
+                    toolImagePath = "images/screwdriver.jpg"; // Image path for screwdriver
+                    break;
+                case "pliers":
+                    toolInfo = "Pliers are used to grip, twist, or cut materials.";
+                    toolImagePath = "images/pliers.jpg"; // Image path for pliers
+                    break;
+                case "wrench":
+                    toolInfo = "A wrench is used to provide grip and mechanical advantage in applying torque to turn objects.";
+                    toolImagePath = "images/wrench.jpg"; // Image path for wrench
+                    break;
+                default:
+                    toolInfo = "Select a tool to see its description.";
+                    toolImagePath = "";
+                    break;
+            }
+
+            // Update tool description
+            description.innerHTML = `<p>${toolInfo}</p>`;
+
+            // Update the tool image
+            if (toolImagePath) {
+                toolImage.src = toolImagePath;
+                toolImage.style.display = "block"; // Show image
+            } else {
+                toolImage.style.display = "none"; // Hide image if no tool is selected
+            }
+        });
+    </script>
+
+</body>
+</html>
