@@ -1,0 +1,178 @@
+/* Setting background color for the body */
+body {
+    background-color: #bfb4b3; /* Light brown background */
+    font-family: 'Pacifico', cursive; /* Handwriting font */
+    color: #4b2e2b; /* Dark brown text */
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for headers with different weights */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* Styling for the navigation menu */
+nav {
+    display: flex;
+    justify-content: center; /* Center the navigation menu horizontally */
+    align-items: center;
+    background-color: #8c6d63; /* Darker brown for contrast */
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Optional: subtle shadow */
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff; /* White text for contrast */
+    font-size: 1rem;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffddc1; /* Light beige hover effect */
+}
+
+/* Styling for the login and register links on the top right */
+.login {
+    position: fixed;
+    top: 10px;
+    right: 20px; /* Position to the right */
+    font-size: 1rem;
+    color: #4b2e2b; /* Dark brown text */
+}
+
+.login a {
+    text-decoration: none;
+    color: #4b2e2b; /* Dark brown text */
+    font-weight: bold;
+    margin-left: 10px; /* Space between login and register links */
+    transition: color 0.3s ease;
+}
+
+.login a:hover {
+    color: #8c6d63; /* Slightly darker hover effect */
+}
+
+/* Centering the main content */
+.header,
+.content {
+    margin-top: 80px; /* Push content below the fixed navigation menu */
+    text-align: center; /* Center-aligns all content */
+}
+
+.content {
+    max-width: 600px; /* Optional: Limit the width for better readability */
+    margin: auto;
+}
+
+.contact-info {
+    background-color: #fff; /* White background for contrast */
+    color: #4b2e2b; /* Dark brown text */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px; /* Limit width for better readability */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    text-align: center; /* Center-align all text */
+    font-size: 1rem;
+}
+
+.contact-info h2, .contact-info h3 {
+    font-weight: bold;
+    color: #8c6d63; /* Darker brown for headers */
+}
+
+.contact-info p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.contact-info a {
+    color: #8c6d63; /* Link color */
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+    color: #b36c56; /* Hover color for links */
+}
+
+/* New Styles for About Us and Image Section */
+
+/* Center content for About Us and Image */
+.content, .about, .image {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* About Us section styling */
+.about {
+    margin-top: 20px;
+}
+
+/* Image styling */
+.image img {
+    width: 50%; /* Adjust the width to 50% of the container */
+    max-width: 300px; /* Limit the maximum width to 300px */
+    height: auto;
+    margin-top: 20px;
+    display: block; /* Ensures the image is treated as a block-level element */
+    margin-left: auto;
+    margin-right: auto; /* Centers the image horizontally */
+}
+
+* Products Section Styling */
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Create two equal columns */
+    gap: 20px; /* Spacing between items */
+    padding: 20px;
+    margin-top: 80px; /* Push content below the fixed navigation menu */
+    justify-items: center; /* Center align grid items */
+}
+
+.product-item {
+    background-color: #fff;
+    color: #4b2e2b;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    text-align: center; /* Center align all text */
+    width: 100%; /* Ensures the item fits within the grid */
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-item p {
+    margin: 10px 0;
+}
+
+.product-item input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    margin-top: 5px;
+    font-size: 1rem;
+}

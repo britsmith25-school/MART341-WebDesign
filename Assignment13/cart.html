@@ -1,0 +1,39 @@
+<!--cart.html-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Cart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<div class="cart-container">
+    <h2>Your Cart</h2>
+    <div class="cart-item">
+        <p>Product: <span id="product-name"></span></p>
+        <p>Price: $<span id="product-price"></span></p>
+        <p>Quantity: <span id="product-quantity"></span></p>
+        <p>Total: $<span id="product-total"></span></p>
+    </div>
+</div>
+
+<script>
+    // Extract data from URL query parameters
+    var urlParams = new URLSearchParams(window.location.search);
+    var product = urlParams.get('product');
+    var price = parseFloat(urlParams.get('price'));
+    var quantity = parseInt(urlParams.get('quantity'));
+
+    // Calculate total cost
+    var total = price * quantity;
+
+    // Display cart item details
+    document.getElementById('product-name').innerText = product;
+    document.getElementById('product-price').innerText = price.toFixed(2);
+    document.getElementById('product-quantity').innerText = quantity;
+    document.getElementById('product-total').innerText = total.toFixed(2);
+</script>
+
+</body>
+</html>

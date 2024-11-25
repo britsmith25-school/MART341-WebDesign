@@ -1,0 +1,132 @@
+<!--Head Section-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Products</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<!--Body Section-->
+<body>
+<!--Navigation Menu-->
+<div class="menu">
+    <a href="home.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+    <!--Login Option Top Right Corner-->
+    <div class="login-container">
+        <form action="login.php" method="post">
+            <input type="text" placeholder="Username" name="username">
+            <input type="password" placeholder="Password" name="password">
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</div>
+
+<!--Products Section-->
+<div class="products-container">
+    <!-- Product 1 -->
+    <div class="product-item">
+        <img src="images/DarkBrewProducts.jpg" alt="Dark Brew">
+        <p>Cup of Joe for the plain and simple!</p>
+        <p><strong>Price: $10.00</strong></p>
+        <label for="quantity1">Quantity:</label>
+        <input type="number" id="quantity1" name="quantity1" value="1" min="1">
+        <form action="cart.html" method="get">
+            <input type="hidden" name="product" value="Dark Brew">
+            <input type="hidden" name="price" value="10.00">
+            <input type="hidden" name="quantity" id="cart-quantity1" value="1">
+            <button type="submit" onclick="updateQuantity(1)">Add to Cart</button>
+        </form>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-item">
+        <img src="images/EspressoProducts.jpg" alt="Espresso">
+        <p>For those who need to get up and moving!</p>
+        <p><strong>Price: $12.00</strong></p>
+        <label for="quantity2">Quantity:</label>
+        <input type="number" id="quantity2" name="quantity2" value="1" min="1">
+        <form action="cart.html" method="get">
+            <input type="hidden" name="product" value="Espresso">
+            <input type="hidden" name="price" value="12.00">
+            <input type="hidden" name="quantity" id="cart-quantity2" value="1">
+            <button type="submit" onclick="updateQuantity(2)">Add to Cart</button>
+        </form>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-item">
+        <img src="images/FrapProducts.jpg" alt="Frappuccino">
+        <p>If you like it sweet!</p>
+        <p><strong>Price: $15.00</strong></p>
+        <label for="quantity3">Quantity:</label>
+        <input type="number" id="quantity3" name="quantity3" value="1" min="1">
+        <form action="cart.html" method="get">
+            <input type="hidden" name="product" value="Frappuccino">
+            <input type="hidden" name="price" value="15.00">
+            <input type="hidden" name="quantity" id="cart-quantity3" value="1">
+            <button type="submit" onclick="updateQuantity(3)">Add to Cart</button>
+        </form>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product-item">
+        <img src="images/LatteProducts.jpg" alt="Latte">
+        <p>Sweet and creamy!</p>
+        <p><strong>Price: $20.00</strong></p>
+        <label for="quantity4">Quantity:</label>
+        <input type="number" id="quantity4" name="quantity4" value="1" min="1">
+        <form action="cart.html" method="get">
+            <input type="hidden" name="product" value="Latte">
+            <input type="hidden" name="price" value="20.00">
+            <input type="hidden" name="quantity" id="cart-quantity4" value="1">
+            <button type="submit" onclick="updateQuantity(4)">Add to Cart</button>
+        </form>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="product-item">
+        <img src="images/MochaProducts.jpeg" alt="Mocha">
+        <p>For the chocolate lovers!</p>
+        <p><strong>Price: $18.00</strong></p>
+        <label for="quantity5">Quantity:</label>
+        <input type="number" id="quantity5" name="quantity5" value="1" min="1">
+        <form action="cart.html" method="get">
+            <input type="hidden" name="product" value="Mocha">
+            <input type="hidden" name="price" value="18.00">
+            <input type="hidden" name="quantity" id="cart-quantity5" value="1">
+            <button type="submit" onclick="updateQuantity(5)">Add to Cart</button>
+        </form>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="product-item">
+        <img src="images/TeaProducts.jpg" alt="Tea">
+        <p>If you don't like coffee, try this!</p>
+        <p><strong>Price: $22.00</strong></p>
+        <label for="quantity6">Quantity:</label>
+        <input type="number" id="quantity6" name="quantity6" value="1" min="1">
+        <form action="cart.html" method="get">
+            <input type="hidden" name="product" value="Tea">
+            <input type="hidden" name="price" value="22.00">
+            <input type="hidden" name="quantity" id="cart-quantity6" value="1">
+            <button type="submit" onclick="updateQuantity(6)">Add to Cart</button>
+        </form>
+    </div>
+</div>
+
+<!-- JavaScript to update the quantity before submitting the form -->
+<script>
+    function updateQuantity(productNumber) {
+        var quantityInput = document.getElementById('quantity' + productNumber);
+        var quantityField = document.getElementById('cart-quantity' + productNumber);
+        quantityField.value = quantityInput.value; // Update hidden input with the quantity value
+    }
+</script>
+
+</body>
+</html>
+
